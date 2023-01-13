@@ -1,0 +1,43 @@
+.bellafit {
+  text-align: center;
+  align-items: center;
+  padding: 180px 28px;
+}
+
+.bellafit__text {
+  display: flex;
+  justify-content: center;
+}
+.bellafit__text p {
+  max-width: 1000px;
+  font-weight: 500;
+  font-family: "Josefin Sans", sans-serif;
+  color: #100e18;
+  font-size: 30px;
+  line-height: 50px;
+  margin: 50px 0;
+}
+
+.bellafit__text__btn{
+    padding: 10px 38px;
+}
+
+@media screen and (max-width:992px) {
+    .bellafit {
+        padding: 80px 28px;
+    }
+}
+
+@media screen and (max-width:580px) {
+   .bellafit__text p {
+    font-size: 18px;
+    line-height: 32px;
+    margin: 20px 0 40px 0;
+   }
+}
+
+@media screen and (max-width:420px) {
+    .bellafit__text__btn {
+        width: 100%;
+    }
+}

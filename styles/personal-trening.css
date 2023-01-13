@@ -1,0 +1,172 @@
+.personal-trening {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  padding-top: 330px;
+}
+
+.personal-trening__back {
+  width: 100%;
+  position: absolute;
+  height: 820px;
+}
+.card {
+  max-width: 370px;
+  padding: 40px;
+  font-family: "Josefin Sans", sans-serif;
+  position: relative;
+}
+.personal-trening__card {
+  border: 1px solid #ffffff;
+  border-top: 2px solid #faff05;
+}
+
+.personal-trening__card__theme {
+  color: #ffffff;
+}
+
+.personal-trening__card_2 {
+  background: #faff05;
+  border: none;
+}
+.personal-trening__card2 {
+  color: #100e18;
+}
+.card-theme {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 40px;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+}
+
+.personal-trening__card__text {
+  color: #8a8a8a;
+}
+
+.personal-trening__card__btn {
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  background: transparent;
+  border: none;
+  color: #c3140f;
+  font-size: 20px;
+  line-height: 36px;
+  letter-spacing: 3px;
+  font-weight: 400;
+  margin-top: 40px;
+  cursor: pointer;
+}
+.carousel-con {
+  display: none;
+}
+
+.carousel {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+  padding-top: 100px;
+}
+.inner {
+  position: relative;
+  align-self: center;
+  width: 100%;
+  height: 410px;
+  /* border-radius: 30px; */
+  overflow: hidden;
+}
+
+.container {
+  list-style: none;
+}
+
+.slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  /* width: 70rem; */
+  width: 100%;
+  transition: all 0.3s;
+}
+.dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  width: 100%;
+}
+
+.dot {
+  width: 1rem;
+  height: 1rem;
+
+  border-radius: 50%;
+  border: 1px solid #ffffff;
+  background: transparent;
+  cursor: pointer;
+}
+
+.dot:hover {
+  background-color: #ffffff;
+}
+
+.dot--active {
+  background-color: #ffffff;
+}
+@media screen and (max-width: 1200px) {
+  .carousel-con {
+    display: block;
+  }
+  .personal-trening {
+    display: none;
+  }
+
+  .personal-trening__back {
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 1130px) {
+  .personal-trening__back {
+    height: 600px;
+  }
+  .carousel {
+    padding: 8% 20px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .personal-trening__back {
+    height: 530px;
+  }
+  .carousel {
+    padding: 8% 20px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .personal-trening__back {
+    height: 500px;
+  }
+  .carousel {
+    padding: 14% 20px;
+  }
+  .card {
+    padding: 25px;
+  }
+  .inner {
+    height: 380px;
+  }
+  .card-theme {
+    font-size: 28px;
+    line-height: 35px;
+    letter-spacing: 0.2em;
+  }
+  .personal-trening__card__btn {
+    font-size: 16px;
+    line-height: 28px;
+    margin-top: 30px;
+  }
+}
